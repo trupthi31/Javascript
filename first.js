@@ -209,6 +209,47 @@
 // console.log("My Name is \nTrupthi Mallesh");
 
 //Loops
+//while Loop
+//initialize, condition, increment
 
+// let i = 1;
+// while(i<5){
+//     console.log("Hii");
+//     i++;
+// }
+
+//do While
+// execute first after checks the condition
+// let i = 0;
+// do{
+//     console.log("Hii",i);
+//     i++;
+// }while(i<5)
+
+//for loop
+//initalize condition upate
+
+// for( let i=0;i<=5; i++){
+//     console.log("hii");
+//     for(let j=1;j<=5; j++){
+//         console.log("Hello");
+//     }
+// }
+
+// let num = 23455
+// while(num>0){
+//     console.log(num%10); // it gives last digit
+//     num = parseInt(num/10)// this removes last num
+// }
+
+//to print reverse of num
+//  let num1 = 123456;
+//  let num2 = 0;
+//  while(num1>0){
+//    console.log(num1%10);
+//     parseInt(num1 / 10);
+   
+
+//  } console.log(num2);
 
 
