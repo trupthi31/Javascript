@@ -249,7 +249,82 @@
 //    console.log(num1%10);
 //     parseInt(num1 / 10);
    
-
 //  } console.log(num2);
+ 
+//Objects
+//Object literalsl
+// let input = 'name' //user input
+// let book ={
+//     name: "Classmate",
+//     size: "long",
+//     cost: 12
+// }
+// console.log(book.size);
+// console.log(book['name']);
 
+//complex object onbject inside object
+// let alien = {
+//     name: 'Human',
+//     tech: 'Java',
+//     laptop: {
+//         cpu: 'i3',
+//         ram: 4,
+//         brand:'dell'
+//     }
+// }
+// delete alien.laptop
+// console.log(alien);
+//console.log(alien.laptop.brand.length)
 
+// function reverseNumber(number) {
+//     let reversedNumber = 0;
+//     while (number !== 0) {
+//         reversedNumber = reversedNumber * 10 + number % 10;
+//         number = Math.floor(number / 10);
+//     }
+//     return reversedNumber;
+// }
+
+// // Example usage:
+// const number = 12345;
+// const reversed = reverseNumber(number);
+// console.log("Original Number:", number);
+// console.log("Reversed Number:", reversed);
+
+// let marker = {
+//     name: 'red',
+//     size: 'long',
+//     laptop:{
+//         cpu : 'i3',
+//         ram: 4,
+//         brand: 'dell'
+//     }
+// }
+// for(let key in marker){ // for in loop
+//     console.log(key,marker[key])
+// }
+//console.log(marker.laptop);
+
+//functions
+// function print(){
+//     console.log("Hii");
+// }
+// print();
+
+//return and pasing valus
+// function print(user){
+//    return user;
+// }
+// let user = "human";
+// let str = print(user);
+// console.log(str);
+
+//function expression anunomus function
+let add = function(num1,num2){
+    return num1+num2;
+}
+// let result = add(2,3);
+// console.log(result);
+let sum = add;
+let result = sum (2,5);
+console.log(result);
