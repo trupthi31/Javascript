@@ -328,6 +328,7 @@
 // let sum = add;
 // let result = sum (2,5);
 // console.log(result);
+<<<<<<< HEAD
 
 // function add(num1, num2){
 //     return num1 + num2;
@@ -566,3 +567,5 @@
 // let num = 5;
 // let result = fact(num);
 // console.log(result);
+=======
+>>>>>>> f54c06ec0f0796cf6a276c87c3dae1ab64ab02e5
