@@ -329,5 +329,228 @@
 // let result = sum (2,5);
 // console.log(result);
 
-//loacl-global- default variables
+// function add(num1, num2){
+//     return num1 + num2;
+// }
 
+// let sum = add(2,3);
+// console.log(sum)
+
+// function greet(u){
+
+//     return u;
+
+// }
+// let user = "virat";
+// let str = greet(user);
+// console.log(str);
+
+//loacl-global- default variables
+// function add(num1,num2,num3=1){ //Whnenever we didnt pass the value it accepct default value
+
+//     console.log(num1, num2, num3);
+//     return num1+num2+num3;
+
+// }
+// let result = add(1,5,4);
+// console.log(result);
+
+//Arrow function
+// let greet = (user) => {
+ 
+//     console.log("Hello " + user);
+//     return 'Hii';
+// }
+// console.log(greet("Kohil"));
+
+//this keyword
+// let laptop1 = {
+//     cpu : "i3",
+//     ram : 2,
+//     brand : "hp",
+
+//     greet: function(){
+//         console.log(laptop1.cpu);
+//     }
+// }
+// //laptop1.greet();
+
+// let laptop2 = {
+//     cpu : "i6",
+//     ram : 8,
+//     brand : "dell",
+
+//     greet: function(){
+//         console.log(this.cpu);
+//     }
+// }
+// laptop2.greet();
+// function getFastLaptop(laptop1,laptop2){
+
+// if(laptop1.cup > laptop2.cpu)
+
+//     console.log(laptop1);
+    
+//     else
+//         console.log(laptop2);
+    
+// }
+
+// let laptop2 = {
+//     cpu: 'i5',
+//     ram: 16,
+//     brand: "Apple",
+
+//     getConfig: function(){
+//         console.log(this.cpu);
+//     }}
+// let laptop1 = {
+//     cpu: 'i3',
+//     ram: 16,
+//     brand: "Hp",
+
+//     compare: function(other){
+//         if(this.cup > other.cpu)
+//          console.log(this);
+//     else
+//         console.log(other);
+//     },
+//     getConfig: function(){
+//        console.log(this.cpu);
+//     }}
+// laptop1.compare(laptop2);
+
+//constructor function
+// function Alien(name, tech){
+//     this.name= name;
+//     this.tech=tech;
+//     this.work = function(){
+//        console.log("Solving bugs");
+//     }
+    
+// }
+// let alien1 = new Alien('Virat','Js') // create new object
+// let alien2 = new Alien('Kohil','Java')
+// alien1.tech="bb"
+// console.log(alien1);
+// alien1.work();
+
+//arrays
+// let values = [1,23,45] // let values = [];
+
+// // values.push(55);
+// // values.push(65);
+
+// console.log(values.length);
+// console.log(values[4]);
+
+//let names = ['Virat','anuskha','vamika'];
+// let data = ['Smriti', 5,{tech:'js'},function () {
+// console.log("RCB");    
+// }]
+// console.log(data);
+// data[3]();
+
+// let data = [2,3,4];
+// console.log(data.push(2)) //add the element at the end of the array
+// console.log(data.pop()); // itwill remove last element
+// console.log(data.shift()); // remove data from the first
+// console.log(data.unshift());//add a new value
+// console.log(data.slice(2,2));//first index 2nd number of values to delete
+// console.log(data)
+
+//for in loop 
+// let nums = [];
+// nums[0] = 5;
+// nums[99] = 9;
+//console.log(nums.length)
+//print all the element one by one
+// for(let n of nums){
+//     console.log(n)
+// }
+// for(let key in nums){
+//     console.log(nums[key])
+// }
+
+//Destructure array
+// let nums = [1,2,3,4,6];
+//console.log(nums[0]);
+//let [a,b,,d] = nums; // destructure array
+// console.log(d);
+
+// let a = 5;
+// let b = 6;
+// [a,b] = [b,a]
+// console.log(a,b)
+
+// let words = "My name is virat kohil cricket player".split(' ');
+// // let [a,b,c,d] = words;
+// // console.log(a,b,c,d);
+// let [a,b,, ...d] = words; // Three dots it means rest of the elements
+
+// console.log(d);
+
+//forEach method it will give one by one value 
+
+// let nums = [42,51,24,98,67,89];
+
+// nums.forEach((n,i,nums) => {
+//     console.log(n,i,nums);
+//    // console.log(n*2);
+// });
+
+// console.log(nums);
+
+//Array method filter map reduce
+
+//filter() for filter
+
+//map it will take a value and change a value
+
+// let nums = [1,2,3,4,5,6,7,8,9];
+// let result = nums.filter(n => n%2==0) // filter the value
+//     .map(n => n*2)   //take a value and double it
+//     .reduce((a,b) => a+b); // reduce will return only one value
+//     console.log(result);
+//    .forEach( n    => { // print it
+//     console.log(n);
+//  });
+
+//set it is a collection of unique element and unorderd list not maintain the sequence, not index value
+
+// let nums = new Set(); // result bokepr not allowed duplicates
+// nums.add(3);
+// nums.add(4);
+// nums.add("Virat");
+// nums.add("Anushka");
+
+// // nums.forEach((value) =>{
+// //     console.log(value);
+// // });
+// console.log(nums.has(3)); //has is a method to check a value persent or not
+
+//Map u can have value and every value have key and value pair
+
+// let map = new Map();
+// map.set("Vamika" , "Java");
+// map.set("Aakya" , "js");
+// map.set("Joythi" , "web");
+// map.set("Vamika" , "blockchain"); //override the value
+// //console.log(map.keys());
+// //console.log(map.has("Vamika"));
+// // for(let [k,v] of map){
+// //     console.log(k," :",v);
+// // }
+// map.forEach( (k,v) => {
+// console.log(k,":",v)
+// });
+
+//recursion
+let num = 1;
+function show() {
+    console.log("Hiii", num);
+    num++;
+    if(num<=10330)
+    show();
+}
+show();
