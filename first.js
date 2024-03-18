@@ -546,11 +546,23 @@
 // });
 
 //recursion
-let num = 1;
-function show() {
-    console.log("Hiii", num);
-    num++;
-    if(num<=10330)
-    show();
-}
-show();
+// let num = 1;
+// function show() {
+//     console.log("Hiii", num);
+//     num++;
+//     if(num<=10330)
+//     show();
+// }
+// show();
+
+// factorial recursion
+// function fact(n) {
+//     if(n==0)
+//         return 1;
+//     else
+//     return n*fact(n-1);
+    
+// }
+// let num = 5;
+// let result = fact(num);
+// console.log(result);
