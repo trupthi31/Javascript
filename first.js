@@ -320,11 +320,14 @@
 // console.log(str);
 
 //function expression anunomus function
-let add = function(num1,num2){
-    return num1+num2;
-}
-// let result = add(2,3);
+// let add = function(num1,num2){
+//     return num1+num2;
+// }
+// // let result = add(2,3);
+// // console.log(result);
+// let sum = add;
+// let result = sum (2,5);
 // console.log(result);
-let sum = add;
-let result = sum (2,5);
-console.log(result);
+
+//loacl-global- default variables
+
